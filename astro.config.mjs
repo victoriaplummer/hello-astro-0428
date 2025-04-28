@@ -8,7 +8,8 @@ import react from "@astrojs/react";
 export default defineConfig({
   base: "/hello-astro",
   build: {
-    assets: "_astro",
+    assets: "_assets",
+    assetsPrefix: "/hello-astro",
   },
   output: "server",
   adapter: cloudflare({
